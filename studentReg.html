@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Student Sign Up</title>
+        <link rel="stylesheet" href="student.css">
+    </head>
+</html>
+
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Sign Up</button>
+                </div>
+            
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User ID"  required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn" onclick="dashboard();">Log in</button>
+            </form>
+            
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="User ID" id="studentName" required>
+                <input type="email" class="input-field" placeholder="Email ID" id="email" required>
+                <input type="text" class="input-field" placeholder="School" id="school" required>
+                <input type="number" class="input-field" placeholder="Bus #" id="bus" min="0" max="99" maxlength="2">
+                <input type="password" class="input-field" placeholder="Enter Password" id="password" required>
+                <input type="checkbox" class="check-box"><span>Receive alerts/notifications?(recommended)</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+       
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>

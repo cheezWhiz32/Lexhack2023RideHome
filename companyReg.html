@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Company Resistration</title>
+        <link rel="stylesheet" href="company.css">
+    </head>
+</html>
+
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()" id="admin-btn">Admin<br> Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register()" id="register-btn">Register</button>
+                </div>
+            
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="License #" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn" onclick="companyDashboard()">Log in</button>
+            </form>
+            
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="License #" required>
+                <input type="email" class="input-field" placeholder="School District" required>
+                <input type="text" class="input-field" placeholder="Address/P.O Box" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn" onclick="companyThanks()">Register</button>
+            </form>
+       
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
